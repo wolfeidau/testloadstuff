@@ -1,0 +1,47 @@
+sudo dtrace -s time.d -c "/Users/markw/.rbenv/versions/1.9.3-p125/bin/ruby -r active_record -e ActiveRecord::Base"
+dtrace: script 'time.d' matched 878 probes
+dtrace: pid 53582 has exited
+
+  __disable_threadsignal                                          271
+  thread_selfid                                                   435
+  fcntl_nocancel                                                 1250
+  issetugid                                                      1435
+  __sysctl                                                       3123
+  getrusage                                                      3347
+  __semwait_signal                                               3785
+  fcntl                                                          4019
+  getrlimit                                                      4542
+  fstatfs64                                                      4665
+  write                                                          7810
+  sigaction                                                      9420
+  select                                                        14521
+  bsdthread_create                                              16153
+  shm_open                                                      17890
+  close_nocancel                                                18519
+  pipe                                                          28925
+  lseek                                                         45311
+  getegid                                                       46527
+  geteuid                                                       48099
+  getgid                                                        57074
+  munmap                                                        58327
+  access                                                        61969
+  getdirentries64                                               63439
+  pread                                                         78256
+  getuid                                                        78783
+  read_nocancel                                                105856
+  open_nocancel                                                133619
+  __pthread_sigmask                                            167663
+  sigaltstack                                                  218710
+  sigprocmask                                                  269333
+  mmap                                                         440162
+  ioctl                                                        565799
+  fstat64                                                     1327330
+  read                                                        2263909
+  close                                                       4585728
+  lstat64                                                     8142346
+  stat64                                                      8195814
+  madvise                                                     9205653
+  open                                                        9537487
+  TOTAL:                                                     45837304
+
+9537487 / 2905  = 3283

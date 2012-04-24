@@ -1,0 +1,3 @@
+sudo dtrace -s time.d -c "/Users/markw/.rbenv/versions/1.9.3-p125/bin/ruby -r active_record -e ActiveRecord::Base"
+
+sudo dtrace -s time.d -c "/Users/markw/.rbenv/versions/1.9.3-p125/bin/ruby -r ./config/environment -e ActiveRecord::Base"
