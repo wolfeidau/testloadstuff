@@ -45,3 +45,26 @@ dtrace: pid 53582 has exited
   TOTAL:                                                     45837304
 
 9537487 / 2905  = 3283
+
+
+  workq_kernreturn                                                130
+  proc_info                                                       154
+  psynch_cvwait                                                   176
+  kevent                                                          235
+  getegid                                                         346
+  getgid                                                          349
+  geteuid                                                         351
+  getuid                                                          352
+  __sysctl                                                        487
+  __pthread_sigmask                                               511
+  close                                                           821
+  ioctl                                                           962
+  read                                                            968
+  sigaltstack                                                    1093
+  sigprocmask                                                    1098
+  fstat64                                                        1697
+  open                                                           2897
+  madvise                                                        2968
+  stat64                                                         3787
+  lstat64                                                        4808
+

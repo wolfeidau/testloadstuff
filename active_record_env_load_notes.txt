@@ -49,3 +49,25 @@ dtrace: pid 53591 has exited
 
 
 69237136 / 22812 = 3035
+
+  workq_kernreturn                                                125
+  mmap                                                            128
+  psynch_cvwait                                                   129
+  lseek                                                           179
+  kevent                                                          191
+  stat64                                                          587
+  getgid                                                          812
+  getegid                                                         813
+  geteuid                                                         814
+  getuid                                                          814
+  close                                                          1909
+  ioctl                                                          2038
+  read                                                           2177
+  sigaltstack                                                    2386
+  sigprocmask                                                    2388
+  madvise                                                        3367
+  fstat64                                                        3977
+  lstat64                                                       11373
+  open                                                          28353
+
+
